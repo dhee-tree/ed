@@ -14,15 +14,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" crossorigin="anonymous">
 
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="footer.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
 
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P903GK61TJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P903GK61TJ');
+    </script>
 </head>
 
 <body>
@@ -31,7 +40,7 @@
         <!-- Sidebar Holder -->
         <nav id="sidebar">
             <div class="sidebar-header">
-              <a href="index.html"><img src="../img/logo.jpg" class="logo center" alt="Logo"></a>
+              <a href="home.html"><img src="../img/logo.jpg" class="logo center" alt="Logo"></a>
                 <h5 style="color:white">&nbsp; &nbsp; &nbsp; Electric Discussions</h5>
             </div>
 
@@ -48,7 +57,7 @@
               <li>
                   <a href="team.html">
                     <i class="fas fa-users"></i>
-                    &nbsp; Our Team</a>
+                    &nbsp; Our Community</a>
               </li>
               <li>
                   <a href="suggestions.html">
@@ -56,138 +65,161 @@
                     &nbsp; Suggest A Topic</a>
               </li>
           </ul>
-
-          <ul class="list-unstyled CTAs">
-              <li>
-                  <a href="https://wa.me/+447448525991?text=My%20name%20is%20%20_.%20I%20would%20love%20to%20join%20Electric%20Discussion" class="download" target="_blank">
+        <ul class="list-unstyled components">
+            <li>
+                <a href="faq.html">
+                    <i class="fas fa-question"></i>
+                    &nbsp; FAQs</a>
+            </li>
+        </ul>
+        <ul class="list-unstyled CTAs">
+            <li>
+                <a href="https://wa.me/+447448525991?text=My%20name%20is%20%20_.%20I%20am%20intrested%20in%20attending%20one%20of%20your%20meetings.%20%20How%20do%20I%20go%20about%20it?"
+                    class="download" target="_blank">
                     <i class="fab fa-whatsapp"></i>
                     JOIN US!</a>
-              </li>
-              <li>
-                  <a href="dates.html" class="article"><i class="fa fa-calendar" aria-hidden="true"></i>
+            </li>
+            <li>
+                <a href="dates.html" class="article"><i class="fa fa-calendar" aria-hidden="true"></i>
                     Meeting Dates</a>
-                </li>
-            </ul>
+            </li>
+        </ul>
         </nav>
 
         <!-- Page Content Holder -->
         <div id="content">
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="navbar-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">
-                                  <i class="fas fa-home"></i>
-                                  Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="news.html">
-                                  <i class="fas fa-newspaper"></i>
-                                  News</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">
-                                  <i class="fas fa-paper-plane"></i>
-                                  Contact Us</a>
-                            </li>
-                        </ul>
+            <div class="topbit">
+                <button type="button" id="sidebarCollapse" class="navbar-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="linknav">
+                    <a href="home.html">
+                        <i class="fas fa-home"></i>
+                    </a>&nbsp;
+                    <a href="contact.html">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact</a>
+                </div>
+        <br><br>
+                <span class="electric"><b>FAQs</b></span>
+            </div>
+            <br><br><br>
+        
+            <section class="homepage faq">
+                <img src="./img/faq.gif" alt="faq"><br>
+                <div class="faqdown">
+                    <span onclick="faq1()" class="faqbtn"><i class="fas fa-dot-circle"></i>&nbsp; &nbsp; What is Electric Discussions (ED)?</span>
+                    <div id="myDropdown" class="faqdown-content">
+                        <p>ED is a community of individuals seeking to explore the depths of topics that affect and impact the average individual.</p>
                     </div>
                 </div>
-            </nav>
+                <br>
+                <div class="faqdown">
+                    <span onclick="faq2()" class="faqbtn"><i class="fas fa-dot-circle"></i>&nbsp; &nbsp; What is a Revolution?</span>
+                    <div id="myDropdown2" class="faqdown-content">
+                        <p>Revolutions are the number of times, each member has successfully presented their own topic.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="faqdown">
+                    <span onclick="faq3()" class="faqbtn"><i class="fas fa-dot-circle"></i>&nbsp; &nbsp; When do you have meetings?</span>
+                    <div id="myDropdown3" class="faqdown-content">
+                        <p>We host meetings every Monday at 7:30pm. We do understand the idea of having a tight schedule. So, if you are
+                        presenting, we offer flexible scheduling between 7:30 pm and 9:30pm.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="faqdown">
+                    <span onclick="faq4()" class="faqbtn"><i class="fas fa-dot-circle"></i>&nbsp; &nbsp; Do I have to be a member to be able to attend meetings?
+</span>
+                    <div id="myDropdown4" class="faqdown-content">
+                        <p>No you do not. You will be able to join all meetings. Becoming a member does allow you to contribute more in regards to
+                        growing and developing our community.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="faqdown">
+                    <span onclick="faq5()" class="faqbtn"><i class="fas fa-dot-circle"></i>&nbsp; &nbsp; How do I become a team member?</span>
+                    <div id="myDropdown5" class="faqdown-content">
+                        <p>Click or copy this link <a href="https://electricdiscussions.co.uk/contact.html" target="_blank">https://electricdiscussions.co.uk/contact.html</a> to get in touch and declare your interest.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="faqdown">
+                    <span onclick="faq6()" class="faqbtn"><i class="fas fa-dot-circle"></i>&nbsp; &nbsp; How are topics selected?</span>
+                    <div id="myDropdown6" class="faqdown-content">
+                        <p>Every member is given the opportunity to submit a topic prior to each new revolution. After which, everyone votes on
+                        their topic of choice. The topic with the highest votes gets hosted next meeting date, then remaining topics will be voted on the next week.
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="faqdown">
+                    <span onclick="faq7()" class="faqbtn"><i class="fas fa-dot-circle"></i>&nbsp; &nbsp; What topics are discussed on ED?</span>
+                    <div id="myDropdown7" class="faqdown-content">
+                        <p>Well, anything really. We want to hear you deliver on topics you are passionate about. The more niche the topic the
+                        better.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="faqdown">
+                    <span onclick="faq8()" class="faqbtn"><i class="fas fa-dot-circle"></i>&nbsp; &nbsp; Am I good enough to present?</span>
+                    <div id="myDropdown8" class="faqdown-content">
+                        <p>Our community will offer you all the support you need, and share their own experience on this journey of building online
+                        confidence</p>
+                    </div>
+                </div>
+                <br>
+                <div class="faqdown">
+                    <span onclick="faq9()" class="faqbtn"><i class="fas fa-dot-circle"></i>&nbsp; &nbsp; If my presentation is bad, what will happen?</span>
+                    <div id="myDropdown9" class="faqdown-content">
+                        <p>Immediately after every meeting, every participant will provide feedback, which will better prepare you for the next
+                        revolution.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="faqdown">
+                    <span onclick="faq10()" class="faqbtn"><i class="fas fa-dot-circle"></i>&nbsp; &nbsp; Will ED actually help me?</span>
+                    <div id="myDropdown10" class="faqdown-content">
+                        <p>Most of our current community members have reported significant improvements in their eloquence and confidence levels.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="faqdown">
+                    <span onclick="faq11()" class="faqbtn"><i class="fas fa-dot-circle"></i>&nbsp; &nbsp; Do I have to pay anything?</span>
+                    <div id="myDropdown11" class="faqdown-content">
+                        <p>There are NO joining or entrance fees.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="faqdown">
+                    <span onclick="faq12()" class="faqbtn"><i class="fas fa-dot-circle"></i>&nbsp; &nbsp; What happens if I am late to a meeting?</span>
+                    <div id="myDropdown12" class="faqdown-content">
+                        <p>Nothing will happen to you. This will only hinder you from understanding the structure of the presenter’s discussion.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="faqdown">
+                    <span onclick="faq13()" class="faqbtn"><i class="fas fa-dot-circle"></i>&nbsp; &nbsp; How do I report negative behaviour?</span>
+                    <div id="myDropdown13" class="faqdown-content">
+                        <p>In the highly unlikely event that this happens, use the contact form to report the issue. Anonymity is guaranteed, when resolving all reports.</p>
+                    </div>
+                </div>
+                <br><br>
+            </section>
 
-<div class="fullCard" id="thumbnail">
-  <div class="cardContent">
-    <div class="cardText">
-            <h1>Frequently Ask Questions</h1>
-</div>
-</div>
-</div>
-<div class="textcard" id="thumbnail">
-  <div class="cardContent">
-    <div class="cardText">
-      <h1 style="text-align:center; color:green">PAGE IS UNDER CONSTRUCTION</h1>
-      <br><br>
-      <p style="text-align:center; color:green">THANK YOU FOR VISITING</p>
 
-
-    </div>
-</div>
-</div>
-        </div>
-    </div>
-
-    <div class="footer">
-      <div id="button"></div>
-<div class="smallest">
-    <div id="container">
-          <div class="row">
-      <div class="col-lg-3 col-md-6">
-          <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
-              <h3 class="f-title f_600 t_color f_size_18" style="color:#e25822">Useful Links</h3>
-              <ul class="list-unstyled f_list">
-                <b><li><a href="advice.html" class="faq-link">Get Advice</a></li></b>
-                  <b><li><a href="policy.html" class="faq-link">Policy</a></li></b>
-                  <b><li><a href="terms.html" class="faq-link">Terms & Conditions</a></li></b>
-              </ul>
-          </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-          <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
-              <h3 class="f-title f_600 t_color f_size_18" style="color:#e25822">Help</h3>
-              <ul class="list-unstyled f_list">
-                  <b><li><a href="faq.html" class="faq-link"><div class="remover"></div>FAQ</a></li></b>
-                  <b><li><a href="contact.html" class="faq-link"><div class="remover"></div>Contact Us</a></li></b>
-              </ul>
-          </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-          <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
-              <h3 class="f-title f_600 t_color f_size_18" style="color:#e25822">Our Socials</h3>
-                  <a href="#" class="icon"><i class="fab fa-facebook fa-3x"></i>
-                  </a>
-                    &nbsp; &nbsp;
-                  <a href="#" class="icon2"><i class="fab fa-instagram fa-3x"></i>
-                  </a>
-          </div>
-          <br><br>
-          <p style="color:white;">Electric Discussions ©  2020</p>
-
-      </div>
-      <div class="col-lg-3 col-md-6">
-          <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
-              <h3 class="f-title f_600 t_color f_size_18" style="color:#e25822">Get in Touch</h3>
-              <p>Don’t miss any updates of our meetings and discussion!</p>
-              <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
-                  <input type="text" name="EMAIL" class="form-control memail" placeholder="Email" size="3">
-                  <div class="floated"><button class="btn btn_get btn_get_two" type="submit">Subscribe</button></div><br>
-                  <p class="mchimp-errmessage" style="display: none;"></p>
-                  <p class="mchimp-sucmessage" style="display: none;"></p>
-              </form>
-          </div>
-        </div>
-
-    </div>
-    </div>
-    </div>
-</div>
+ 
+            
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {

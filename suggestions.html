@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" crossorigin="anonymous">
 
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="footer.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
 
 
 
@@ -24,6 +24,15 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P903GK61TJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-P903GK61TJ');
+    </script>
 </head>
 
 <body>
@@ -32,7 +41,7 @@
         <!-- Sidebar Holder -->
         <nav id="sidebar">
             <div class="sidebar-header">
-              <a href="index.html"><img src="../img/logo.jpg" class="logo center" alt="Logo"></a>
+              <a href="home.html"><img src="../img/logo.jpg" class="logo center" alt="Logo"></a>
                 <h5 style="color:white">&nbsp; &nbsp; &nbsp; Electric Discussions</h5>
             </div>
 
@@ -49,7 +58,7 @@
               <li>
                   <a href="team.html">
                     <i class="fas fa-users"></i>
-                    &nbsp; Our Team</a>
+                    &nbsp; Our Community</a>
               </li>
               <li>
                   <a href="suggestions.html">
@@ -57,77 +66,59 @@
                     &nbsp; Suggest A Topic</a>
               </li>
           </ul>
-
+          <ul class="list-unstyled components">
+            <li>
+              <a href="faq.html">
+                <i class="fas fa-question"></i>
+                &nbsp; FAQs</a>
+            </li>
+          </ul>
           <ul class="list-unstyled CTAs">
-              <li>
-                  <a href="https://wa.me/+447448525991?text=My%20name%20is%20%20_.%20I%20would%20love%20to%20join%20Electric%20Discussion" class="download" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
-                    JOIN US!</a>
-              </li>
-              <li>
-                  <a href="dates.html" class="article"><i class="fa fa-calendar" aria-hidden="true"></i>
-                    Meeting Dates</a>
-                </li>
-            </ul>
-        </nav>
+            <li>
+              <a href="https://wa.me/+447448525991?text=My%20name%20is%20%20_.%20I%20am%20intrested%20in%20attending%20one%20of%20your%20meetings.%20%20How%20do%20I%20go%20about%20it?"
+                class="download" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                JOIN US!</a>
+            </li>
+            <li>
+              <a href="dates.html" class="article"><i class="fa fa-calendar" aria-hidden="true"></i>
+                Meeting Dates</a>
+            </li>
+          </ul>
+          </nav>
 
         <!-- Page Content Holder -->
-        <div id="content">
+<div id="content">
+  <div class="topbit">
+    <button type="button" id="sidebarCollapse" class="navbar-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="linknav">
+      <a href="home.html">
+        <i class="fas fa-home"></i>
+      </a>&nbsp;
+      <a href="contact.html">
+        <i class="fas fa-paper-plane"></i>
+        Contact</a>
+    </div>
+<br><br>
+    <span class="electric"><b>Suggestion Box</b></span>
+  </div>
+  <br><br><br>
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="navbar-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">
-                                  <i class="fas fa-home"></i>
-                                  Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="news.html">
-                                  <i class="fas fa-newspaper"></i>
-                                  News</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">
-                                  <i class="fas fa-paper-plane"></i>
-                                  Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-
-<div class="fullCard" id="thumbnail">
-  <div class="cardContent">
-    <div class="cardText">
-            <h1>Suggest A Topic</h1>
-</div>
-</div>
-</div>
 <div class="textcard" id="thumbnail">
   <div class="cardContent">
     <div class="cardText">
-            <p class="wow">We look forward to hearing from you, we are open to your ideas and suggestions.</p>
-            <b style="color:white;">Please use the form below to share your ideas, feel free to stay anonymous if you want.</b>
-            <br>
-            <b style="color:white; background:green">NOTE: Dropping an email address would enable us get back to you if your topic has been discussed.</b>
-            <br>
-            <br>
+            <p class="wow" style="text-align: center;">We look forward to hearing from you, we are open to your ideas and suggestions.</p>
+            <p style="text-align: center;"><b>Please use the form below to share your ideas, feel free to stay anonymous if you want.</b></p>
+            <p style="text-align: center;"><b style="color:white; background:green;">NOTE: Dropping an email address would enable us get back to you if your topic has been discussed.</b></p>
+ 
           </div>
 
             <div class="contact-container">
-              <h1>Suggestion Box!</h1>
+              <h1 style="font-family: Sofia;">Suggestion Box!</h1>
               <form action="suggestions.php" method="post">
               <div class="txtb">
                 <label>Name:</label>
@@ -149,7 +140,7 @@
                 <textarea name="details" placeholder="Topic details"></textarea>
               </div>
               <button type="submit" name="submit" class="btn2">Drop Suggestion</button>
-              <p style="color:#e25822;">Many Thanks!</p>
+              <p style="color:#0a5807;">Many Thanks!</p>
             </form>
             </div>
           </div>
@@ -157,59 +148,8 @@
 
 <div class="line"></div>
 
-<div class="footer">
-  <div id="button"></div>
-<div class="smallest">
-<div id="container">
-      <div class="row">
-  <div class="col-lg-3 col-md-6">
-      <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
-          <h3 class="f-title f_600 t_color f_size_18" style="color:#e25822">Useful Links</h3>
-          <ul class="list-unstyled f_list">
-            <b><li><a href="advice.html" class="faq-link">Get Advice</a></li></b>
-              <b><li><a href="policy.html" class="faq-link">Policy</a></li></b>
-              <b><li><a href="terms.html" class="faq-link">Terms & Conditions</a></li></b>
-          </ul>
-      </div>
-  </div>
-  <div class="col-lg-3 col-md-6">
-      <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
-          <h3 class="f-title f_600 t_color f_size_18" style="color:#e25822">Help</h3>
-          <ul class="list-unstyled f_list">
-              <b><li><a href="faq.html" class="faq-link"><div class="remover"></div>FAQ</a></li></b>
-              <b><li><a href="contact.html" class="faq-link"><div class="remover"></div>Contact Us</a></li></b>
-          </ul>
-      </div>
-  </div>
-  <div class="col-lg-3 col-md-6">
-      <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
-          <h3 class="f-title f_600 t_color f_size_18" style="color:#e25822">Our Socials</h3>
-              <a href="#" class="icon"><i class="fab fa-facebook fa-3x"></i>
-                &nbsp; &nbsp;
-              <a href="#" class="icon2"><i class="fab fa-instagram fa-3x"></i>
-              </a>
-          </div>
-          <br><br>
-          <p style="color:white;">Electric Discussions ©  2020</p>
 
-      </div>
-      <div class="col-lg-3 col-md-6">
-          <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
-              <h3 class="f-title f_600 t_color f_size_18" style="color:#e25822">Get in Touch</h3>
-              <p>Don’t miss any updates of our meetings and discussion!</p>
-              <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
-                  <input type="text" name="EMAIL" class="form-control memail" placeholder="Email" size="3">
-                  <div class="floated"><button class="btn btn_get btn_get_two" type="submit">Subscribe</button></div><br>
-                  <p class="mchimp-errmessage" style="display: none;"></p>
-                  <p class="mchimp-sucmessage" style="display: none;"></p>
-              </form>
-          </div>
-        </div>
 
-    </div>
-    </div>
-    </div>
-</div>
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->

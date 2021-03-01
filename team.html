@@ -11,18 +11,33 @@
 
 
     <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        crossorigin="anonymous">
 
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="footer.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
 
 
     <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P903GK61TJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P903GK61TJ');
+    </script>
 </head>
 
 <body>
@@ -31,180 +46,311 @@
         <!-- Sidebar Holder -->
         <nav id="sidebar">
             <div class="sidebar-header">
-              <a href="index.html"><img src="../img/logo.jpg" class="logo center" alt="Logo"></a>
+                <a href="home.html"><img src="../img/logo.jpg" class="logo center" alt="Logo"></a>
                 <h5 style="color:white">&nbsp; &nbsp; &nbsp; Electric Discussions</h5>
             </div>
 
             <ul class="list-unstyled components">
                 <li>
                     <a href="meeting.html"><i class="fa fa-university" aria-hidden="true"></i>
-                      &nbsp; Meeting Treasury</a>
+                        &nbsp; Meeting Treasury</a>
 
                 <li>
-                  <a href="about.html">
-                    <i class="fas fa-briefcase"></i>
-                    &nbsp; About Us</a>
-              </li>
-              <li>
-                  <a href="team.html">
-                    <i class="fas fa-users"></i>
-                    &nbsp; Our Team</a>
-              </li>
-              <li>
-                  <a href="suggestions.html">
-                    <i class="fa fa-lightbulb" aria-hidden="true"></i>
-                    &nbsp; Suggest A Topic</a>
-              </li>
-          </ul>
-
-          <ul class="list-unstyled CTAs">
-              <li>
-                  <a href="https://wa.me/+447448525991?text=My%20name%20is%20%20_.%20I%20would%20love%20to%20join%20Electric%20Discussion" class="download" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
-                    JOIN US!</a>
-              </li>
-              <li>
-                  <a href="dates.html" class="article"><i class="fa fa-calendar" aria-hidden="true"></i>
-                    Meeting Dates</a>
+                    <a href="about.html">
+                        <i class="fas fa-briefcase"></i>
+                        &nbsp; About Us</a>
+                </li>
+                <li>
+                    <a href="team.html">
+                        <i class="fas fa-users"></i>
+                        &nbsp; Our Community</a>
+                </li>
+                <li>
+                    <a href="suggestions.html">
+                        <i class="fa fa-lightbulb" aria-hidden="true"></i>
+                        &nbsp; Suggest A Topic</a>
+                </li>
+            </ul>
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="faq.html">
+                        <i class="fas fa-question"></i>
+                        &nbsp; FAQs</a>
+                </li>
+            </ul>
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://wa.me/+447448525991?text=My%20name%20is%20%20_.%20I%20am%20intrested%20in%20attending%20one%20of%20your%20meetings.%20%20How%20do%20I%20go%20about%20it?"
+                        class="download" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        JOIN US!</a>
+                </li>
+                <li>
+                    <a href="dates.html" class="article"><i class="fa fa-calendar" aria-hidden="true"></i>
+                        Meeting Dates</a>
                 </li>
             </ul>
         </nav>
 
         <!-- Page Content Holder -->
         <div id="content">
+            <div class="topbit">
+                <button type="button" id="sidebarCollapse" class="navbar-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="linknav">
+                    <a href="home.html">
+                        <i class="fas fa-home"></i>
+                    </a>&nbsp;
+                    <a href="contact.html">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact</a>
+                </div>
+                <br><br>
+                <span class="electric"><b>Meet Our Team</b></span>
+            </div>
+            <br><br><br>
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="navbar-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">
-                                  <i class="fas fa-home"></i>
-                                  Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="news.html">
-                                  <i class="fas fa-newspaper"></i>
-                                  News</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">
-                                  <i class="fas fa-paper-plane"></i>
-                                  Contact Us</a>
-                            </li>
-                        </ul>
+            <section class="team">
+                <div class="teamContainer">
+                    <br><br>
+                    <div class="teamCard">
+                        <div class="teamBox">
+                            <a id="myBtn4" class="teamBtn"><img src="./img/lionel.png" alt="Lionel">
+                            </a>
+                            <h4>Lionel</h4>
+                            <h5>Founder</h5>
+                            <p>Lionel is a leader with great potentials.</p>
+                            <p><small><i>Click on picture to read more</i></small></p>
+                            <div class="line"></div>
+                            <div class="teamIcon"><i class="fab fa-facebook fa-2x"
+                                    style="color: #3b5998;"></i>&nbsp;&nbsp;<i class="fab fa-instagram fa-2x"
+                                    style="color: #e4717a;"></i></div>
+                        </div>
+                    </div>
+                    <div class="teamCard">
+                        <div class="teamBox">
+                            <a id="myBtn1" class="teamBtn"><img src="./img/ganiyu.png" alt="Ganiyu">
+                            </a>
+                            <h4>Ganiyu</h4>
+                            <h5>Co-Founder</h5>
+                            <p>A lovely gentleman who loves nature. </p>
+                            <p><small><i>Click on picture to read more</i></small></p>
+                            <div class="line"></div>
+                            <div class="teamIcon"><i class="fab fa-facebook fa-2x"
+                                    style="color: #3b5998;"></i>&nbsp;&nbsp;<i class="fab fa-instagram fa-2x"
+                                    style="color: #e4717a;"></i></div>
+                        </div>
+                    </div>
+                    <div class="teamCard">
+                        <div class="teamBox">
+                            <a id="myBtn3" class="teamBtn"><img src="./img/francis.png" alt="Francis">
+                            </a>
+                            <h4>Francis</h4>
+                            <h5>Co-Founder</h5>
+                            <p>An ethusistic young man with great potentials.</p>
+                            <p><small><i>Click on picture to read more</i></small></p>
+                            <div class="line"></div>
+                            <div class="teamIcon"><i class="fab fa-facebook fa-2x"
+                                    style="color: #3b5998;"></i>&nbsp;&nbsp;<i class="fab fa-instagram fa-2x"
+                                    style="color: #e4717a;"></i></div>
+                        </div>
+                    </div>
+                    <div class="teamCard">
+                        <div class="teamBox">
+                            <a id="myBtn2" class="teamBtn"><img src="./img/vanette.png" alt="Vanette">
+                            </a>
+                            <h4>Vanette</h4>
+                            <h5>Member</h5>
+                            <p>An inspriring young woman, who love to spread love.</p>
+                            <p><small><i>Click on picture to read more</i></small></p>
+                            <div class="line"></div>
+                            <div class="teamIcon"><i class="fab fa-facebook fa-2x"
+                                    style="color: #3b5998;"></i>&nbsp;&nbsp;<i class="fab fa-instagram fa-2x"
+                                    style="color: #e4717a;"></i></div>
+                        </div>
                     </div>
                 </div>
-            </nav>
 
-<div class="fullCard" id="thumbnail">
-  <div class="cardContent">
-    <div class="cardText">
-            <h1>Meet The Team!</h1>
-</div>
-</div>
-</div>
-<div class="textcard" id="thumbnail">
-  <div class="cardContent">
-    <div class="cardText">
-      <h1 style="text-align:center; color:green">PAGE IS UNDER CONSTRUCTION</h1>
-      <br><br>
-      <p style="text-align:center; color:green">THANK YOU FOR VISITING</p>
+                <!-- The Modal -->
+                <div id="ganiyu" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close" id="close1">&times;</span>
+                            <h2>Ganiyu Odebala</h2>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./img/ganiyu.png" alt="Ganiyu">
+                        </div>
+                        <div class="modal-footer">
+                            <h3>I am a dedicated optimist who currently studies A level sciences and love playing chess,
+                                scrabble
+                                and
+                                football. I intend
+                                to make a massive impact in neurology in the future. I absolutely enjoy an edutainment
+                                debate that
+                                can
+                                be learnt from
+                                and also helping others and myself attain utmost potentials.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="vanette" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close" id="close2">&times;</span>
+                            <h2>Vanette Mendozza</h2>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./img/vanette.png" alt="Vanette">
+                        </div>
+                        <div class="modal-footer">
+                            <h3>I am currently doing a Digital Marketing Apprenticeship. I am very passionate when it
+                                comes to watching documentaries
+                                and I engage myself in self development activities such as reading books. My goal in
+                                life is to inspire others and help
+                                those who are unfortunate.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="francis" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close" id="close3">&times;</span>
+                            <h2>Francis Phiri</h2>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./img/francis.png" alt="Francis">
+                        </div>
+                        <div class="modal-footer">
+                            <h3>I am a 17 year old Christian and I study Level 3 computer
+                                science at PRC. I like
+                                to run alot and eat healthy whilst reading a lot of books to keep me going.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="lionel" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close" id="close4">&times;</span>
+                            <h2>Lionel Muskwe</h2>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./img/lionel.png" alt="Lionel">
+                        </div>
+                        <div class="modal-footer">
+                            <h3>Currently pursing Computer Science. I enjoy listening and learning from other people. I
+                                find myself,
+                                constantly pursuing self-development through reading, informed discussions, networking,
+                                and
+                                mindfulness. My ambition is to effect change through the power of Computing.</h3>
+                        </div>
+                    </div>
+                </div>
+            </section><br> <br>
+            <section class="team">
+                <div class="teamContainer">
+                    <br><br>
+                    <div class="teamCard teamFloat">
+                        <div class="teamBox">
+                            <a id="myBtn5" class="teamBtn"><img src="./img/Walter.jpg" alt="Lionel">
+                            </a>
+                            <h4>Walter</h4>
+                            <h5>Member</h5>
+                            <p>Full with potentials, fully equipped to conquer the world.</p>
+                            <p><small><i>Click on picture to read more</i></small></p>
+                            <div class="line"></div>
+                            <div class="teamIcon"><i class="fab fa-facebook fa-2x"
+                                    style="color: #3b5998;"></i>&nbsp;&nbsp;<i class="fab fa-instagram fa-2x"
+                                    style="color: #e4717a;"></i></div>
+                        </div>
+                    </div>
+                    <div class="teamCard">
+                        <div class="teamBox">
+                            <a id="myBtn6" class="teamBtn"><img src="./img/Ighomena.jpg" alt="Vanette">
+                            </a>
+                            <h4>Ighomena</h4>
+                            <h5>C0-Founder</h5>
+                            <p>Inspired to change the world, an enthusiast and inventor.</p>
+                            <p><small><i>Click on picture to read more</i></small></p>
+                            <div class="line"></div>
+                            <div class="teamIcon"><i class="fab fa-facebook fa-2x"
+                                    style="color: #3b5998;"></i>&nbsp;&nbsp;<i class="fab fa-instagram fa-2x"
+                                    style="color: #e4717a;"></i></div>
+                        </div>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="walter" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close" id="close5">&times;</span>
+                                <h2>Walter Chakanetsa</h2>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./img/Walter.jpg" alt="Walter">
+                            </div>
+                            <div class="modal-footer">
+                                <h3>I am a young person interested in a career in medicine and how it has enabled
+                                    doctors to cure many diseases and save lives. I am a Christian, my main goal in life
+                                    is to help find the cure for cancer.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ighomena" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close" id="close6">&times;</span>
+                                <h2>Ighomena Odebala</h2>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./img/Ighomena.jpg" alt="Ighomena">
+                            </div>
+                            <div class="modal-footer">
+                                <h3>Currently studing IT Level 3, I have a passion for writing, playing chess; I love
+                                    exploring new grounds and hope to have an invention of my own in the future.</h3>
+                            </div>
+                        </div>
+                    </div>
+            </section>
 
-
-    </div>
-</div>
-</div>
-        </div>
-    </div>
-
-    <div class="footer">
-      <div id="button"></div>
-<div class="smallest">
-    <div id="container">
-          <div class="row">
-      <div class="col-lg-3 col-md-6">
-          <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
-              <h3 class="f-title f_600 t_color f_size_18" style="color:#e25822">Useful Links</h3>
-              <ul class="list-unstyled f_list">
-                <b><li><a href="advice.html" class="faq-link">Get Advice</a></li></b>
-                  <b><li><a href="policy.html" class="faq-link">Policy</a></li></b>
-                  <b><li><a href="terms.html" class="faq-link">Terms & Conditions</a></li></b>
-              </ul>
-          </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-          <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
-              <h3 class="f-title f_600 t_color f_size_18" style="color:#e25822">Help</h3>
-              <ul class="list-unstyled f_list">
-                  <b><li><a href="faq.html" class="faq-link"><div class="remover"></div>FAQ</a></li></b>
-                  <b><li><a href="contact.html" class="faq-link"><div class="remover"></div>Contact Us</a></li></b>
-              </ul>
-          </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-          <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
-              <h3 class="f-title f_600 t_color f_size_18" style="color:#e25822">Our Socials</h3>
-                  <a href="#" class="icon"><i class="fab fa-facebook fa-3x"></i>
-                  </a>
-                    &nbsp; &nbsp;
-                  <a href="#" class="icon2"><i class="fab fa-instagram fa-3x"></i>
-                  </a>
-          </div>
-          <br><br>
-          <p style="color:white;">Electric Discussions ©  2020</p>
-
-      </div>
-      <div class="col-lg-3 col-md-6">
-          <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
-              <h3 class="f-title f_600 t_color f_size_18" style="color:#e25822">Get in Touch</h3>
-              <p>Don’t miss any updates of our meetings and discussion!</p>
-              <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
-                  <input type="text" name="EMAIL" class="form-control memail" placeholder="Email" size="3">
-                  <div class="floated"><button class="btn btn_get btn_get_two" type="submit">Subscribe</button></div><br>
-                  <p class="mchimp-errmessage" style="display: none;"></p>
-                  <p class="mchimp-sucmessage" style="display: none;"></p>
-              </form>
-          </div>
-        </div>
-
-    </div>
-    </div>
-    </div>
-</div>
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-                $(this).toggleClass('active');
-            });
-        });
-    </script>
-    <script>
-    window.onload = function(){
-        document.getElementById('close').onclick = function(){
-            this.parentNode.parentNode.parentNode
-            .removeChild(this.parentNode.parentNode);
-            return false;
-        };
-    };
-    </script>
+            <script src="./js/team.js"></script>
+            <!-- jQuery CDN - Slim version (=without AJAX) -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <!-- Popper.JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+                integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+                crossorigin="anonymous"></script>
+            <!-- Bootstrap JS -->
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+                integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+                crossorigin="anonymous"></script>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('#sidebarCollapse').on('click', function () {
+                        $('#sidebar').toggleClass('active');
+                        $(this).toggleClass('active');
+                    });
+                });
+            </script>
+            <script>
+                window.onload = function () {
+                    document.getElementById('close').onclick = function () {
+                        this.parentNode.parentNode.parentNode
+                            .removeChild(this.parentNode.parentNode);
+                        return false;
+                    };
+                };
+            </script>
 </body>
 
 </html>

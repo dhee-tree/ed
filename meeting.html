@@ -13,11 +13,11 @@
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="controls.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
 
 
 
@@ -25,6 +25,15 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P903GK61TJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P903GK61TJ');
+    </script>
 </head>
 
 <body>
@@ -33,7 +42,7 @@
         <!-- Sidebar Holder -->
         <nav id="sidebar">
             <div class="sidebar-header">
-              <a href="index.html"><img src="../img/logo.jpg" class="logo center" alt="Logo"></a>
+              <a href="home.html"><img src="../img/logo.jpg" class="logo center" alt="Logo"></a>
                 <h5 style="color:white">&nbsp; &nbsp; &nbsp; Electric Discussions</h5>
             </div>
 
@@ -50,7 +59,7 @@
               <li>
                   <a href="team.html">
                     <i class="fas fa-users"></i>
-                    &nbsp; Our Team</a>
+                    &nbsp; Our Community</a>
               </li>
               <li>
                   <a href="suggestions.html">
@@ -59,146 +68,68 @@
               </li>
           </ul>
 
-          <ul class="list-unstyled CTAs">
-              <li>
-                  <a href="https://wa.me/+447448525991?text=My%20name%20is%20%20_.%20I%20would%20love%20to%20join%20Electric%20Discussion" class="download" target="_blank">
+        <ul class="list-unstyled components">
+            <li>
+                <a href="faq.html">
+                    <i class="fas fa-question"></i>
+                    &nbsp; FAQs</a>
+            </li>
+        </ul>
+        <ul class="list-unstyled CTAs">
+            <li>
+                <a href="https://wa.me/+447448525991?text=My%20name%20is%20%20_.%20I%20am%20intrested%20in%20attending%20one%20of%20your%20meetings.%20%20How%20do%20I%20go%20about%20it?"
+                    class="download" target="_blank">
                     <i class="fab fa-whatsapp"></i>
                     JOIN US!</a>
-              </li>
-              <li>
-                  <a href="dates.html" class="article"><i class="fa fa-calendar" aria-hidden="true"></i>
+            </li>
+            <li>
+                <a href="dates.html" class="article"><i class="fa fa-calendar" aria-hidden="true"></i>
                     Meeting Dates</a>
-                </li>
-            </ul>
+            </li>
+        </ul>
         </nav>
 
         <!-- Page Content Holder -->
         <div id="content">
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="navbar-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">
-                                  <i class="fas fa-home"></i>
-                                  Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="news.html">
-                                  <i class="fas fa-newspaper"></i>
-                                  News</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">
-                                  <i class="fas fa-paper-plane"></i>
-                                  Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="topbit">
+                <button type="button" id="sidebarCollapse" class="navbar-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="linknav">
+                    <a href="home.html">
+                        <i class="fas fa-home"></i>
+                    </a>&nbsp;
+                    <a href="contact.html">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact</a>
                 </div>
-            </nav>
+        <br><br>
+                <span class="electric"><b>Meeting Treasury</b></span>
+            </div>
+            <br><br><br>
+        
+<section class="homepage meet">
+    <img src="./img/meet.gif" alt="treasury"><br>
+            <p>Here you will find links to all our recorded meetings, we hope you enjoy our discussions and we look forward to hearing your reviews!</p>
+            <p>Meetings are categorised in <b>REVOLUTIONS</b> <br>&nbsp; &nbsp; ***Revolutions are the number of times, each member has successfully presented their own topic.
+                <br>&nbsp; &nbsp; &nbsp; Use the links below to navigate through the Revolutions. Click <i class="fas fa-info inf"></i> to get a summarised details about the Revolution (i.e contents and host).</p>
+            <a href="revone.html" class="revolution"><i class="fas fa-handshake"></i></i>
+                Revolution 1 </a><div class="popup" onclick="myFunction1()"> &nbsp; &nbsp;<i class="fas fa-info fa-lg inf"></i>
+                    <p class="popuptext" id="myPopup1" style="font-size: 13px;">Social Media by <u>Vanette</u><br>Greatest threat by <u>Francis</u><br>Why We Sleep by <u>Lionel</u><br>Self Development by <u>Ighomena</u><br>The Purpose Of Youth. <u>Genaral</u></p>
+                </div><br>
+            <a href="revtwo.html" class="revolution"><i class="fas fa-handshake"></i></i>
+                Revolution 2</a><div class="popup" onclick="myFunction2()"> &nbsp; &nbsp;<i class="fas fa-info fa-lg inf"></i>
+                    <p class="popuptext" id="myPopup2" style="font-size: 13px;">The Act Of Leadership by <u>Walter</u><br>The Impact Of Change by <u>Felicious</u><br>Self Love by <u>Vanette</u><br>TV cultural decadence by <u>Francis</u><br>Responsibility and Independence by <u>Ighomena</u><br>Fear by <u>Ganiyu</u><br>History Of Computers by <u>Lionel</u></p>
+                </div><br>
+            <a href="revthree.html" class="revolution"><i class="fas fa-handshake"></i></i>
+                Revolution 3</a><div class="popup" onclick="myFunction3()"> &nbsp; &nbsp;<i class="fas fa-info fa-lg inf"></i>
+                    <p class="popuptext" id="myPopup3" style="font-size: 13px;">Pink spiders by <u>Lionel</u><br>Incentives and Disincentives of Education by <u>Vanette</u><br>Life Expectations by <u>Ganiyu</u><br>Is Suffering Necessary by <u>Francis</u><br>Insecurities by <u>Felicious</u></p>
+                </div>
+</section>
 
-<div class="fullCard" id="thumbnail">
-  <div class="cardContent">
-    <div class="cardText">
-            <h1>Meeting Treasury</h1>
-</div>
-</div>
-</div>
-<div class="textcard" id="thumbnail">
-  <div class="cardContent">
-    <div class="cardText">
-            <p class="wow">Here you will find links to all our recorded meetings, we hope you enjoy our discussions and we look forward to hearing your reviews!</p>
-
-<div>
-  <ul>
-    <li><b>2020-08-03: The Act Of Leadership - Hosted by Walter</b></li>
-  </ul>
-  <div class="video">
-<iframe class="iframe borderimg1" src="https://drive.google.com/file/d/1cv_35MycumgG8eOoCCN7gjRzhI-cwqmK/preview" frameborder="5" allowfullscreen></iframe>
-</div>
-</div>
-<div class="line"></div>
-<div>
-  <ul>
-    <li><b>2020-08-10: How has TV brought cultural decadence in our country - Hosted by Francis</b></li>
-  </ul>
-  <div class="video">
-<iframe class="iframe borderimg1" src="https://drive.google.com/file/d/1TiPEWOgyPUxsnZiPi57h7X5POOuvDGYz/preview" frameborder="5" allowfullscreen></iframe>
-</div>
-</div>
-<div class="line"></div>
-
-</div>
-</div>
-</div>
-        </div>
-    </div>
-
-    <div class="footer">
-      <div id="button"></div>
-<div class="smallest">
-    <div id="container">
-          <div class="row">
-      <div class="col-lg-3 col-md-6">
-          <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
-              <h3 class="f-title f_600 t_color f_size_18" style="color:#e25822">Useful Links</h3>
-              <ul class="list-unstyled f_list">
-                <b><li><a href="advice.html" class="faq-link">Get Advice</a></li></b>
-                  <b><li><a href="policy.html" class="faq-link">Policy</a></li></b>
-                  <b><li><a href="terms.html" class="faq-link">Terms & Conditions</a></li></b>
-              </ul>
-          </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-          <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
-              <h3 class="f-title f_600 t_color f_size_18" style="color:#e25822">Help</h3>
-              <ul class="list-unstyled f_list">
-                  <b><li><a href="faq.html" class="faq-link"><div class="remover"></div>FAQ</a></li></b>
-                  <b><li><a href="contact.html" class="faq-link"><div class="remover"></div>Contact Us</a></li></b>
-              </ul>
-          </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-          <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
-              <h3 class="f-title f_600 t_color f_size_18" style="color:#e25822">Our Socials</h3>
-                  <a href="#" class="icon"><i class="fab fa-facebook fa-3x"></i>
-                    &nbsp; &nbsp;
-                  <a href="#" class="icon2"><i class="fab fa-instagram fa-3x"></i>
-                  </a>
-          </div>
-          <br><br>
-          <p style="color:white;">Electric Discussions ©  2020</p>
-
-      </div>
-      <div class="col-lg-3 col-md-6">
-          <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
-              <h3 class="f-title f_600 t_color f_size_18" style="color:#e25822">Get in Touch</h3>
-              <p>Don’t miss any updates of our meetings and discussion!</p>
-              <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
-                  <input type="text" name="EMAIL" class="form-control memail" placeholder="Email" size="3">
-                  <div class="floated"><button class="btn btn_get btn_get_two" type="submit">Subscribe</button></div><br>
-                  <p class="mchimp-errmessage" style="display: none;"></p>
-                  <p class="mchimp-sucmessage" style="display: none;"></p>
-              </form>
-          </div>
-        </div>
-
-    </div>
-    </div>
-    </div>
-</div>
+ 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->
@@ -221,6 +152,21 @@
             return false;
         };
     };
+    </script>
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction1() {
+            var popup = document.getElementById("myPopup1");
+            popup.classList.toggle("show");
+        }
+        function myFunction2() {
+            var popup = document.getElementById("myPopup2");
+            popup.classList.toggle("show");
+        }
+        function myFunction3() {
+            var popup = document.getElementById("myPopup3");
+            popup.classList.toggle("show");
+        }
     </script>
 </body>
 

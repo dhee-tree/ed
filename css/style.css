@@ -1,0 +1,1186 @@
+/* title font */
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+/* spare */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+/* contact form  */
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+/* p font */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Archivo Narrow", sans-serif;
+    background: #E4E4E4 url(../img/back.png) repeat;
+}
+
+p {
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #f8f9fa;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: rgb(184, 82, 82);
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    border-bottom: 1px double #ddd;
+}
+
+.revolution {
+  color: blanchedalmond;
+  font-size: 25px;
+}
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    perspective: 1500px;
+}
+
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #6c4f3f;
+    color: #fff;
+    transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+    transform-origin: bottom left;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+    transform: rotateY(100deg);
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #e25822;
+}
+
+#sidebar .components {
+    padding: 20px 0;
+    border-bottom: 1px solid #e25822;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.download {
+    background: #fff;
+    color: #006400;
+}
+
+a.article, a.article:hover {
+    background: #e25822 !important;
+    color: #fff !important;
+}
+
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+#sidebarCollapse {
+    width: 40px;
+    height: 40px;
+    background: #f5f5f5;
+    cursor: pointer;
+}
+
+#sidebarCollapse span {
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    display: block;
+    background: #555;
+    transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+    transition-delay: 0.2s;
+}
+
+#sidebarCollapse span:first-of-type {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+#sidebarCollapse span:nth-of-type(2) {
+    opacity: 0;
+}
+#sidebarCollapse span:last-of-type {
+    transform: rotate(-45deg) translate(1px, -1px);
+}
+
+
+#sidebarCollapse.active span {
+    transform: none;
+    opacity: 1;
+    margin: 5px auto;
+}
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+        transform: rotateY(90deg);
+    }
+    #sidebar.active {
+        margin-left: 0;
+        transform: none;
+    }
+    #sidebarCollapse span:first-of-type,
+    #sidebarCollapse span:nth-of-type(2),
+    #sidebarCollapse span:last-of-type {
+        transform: none;
+        opacity: 1;
+        margin: 5px auto;
+    }
+    #sidebarCollapse.active span {
+        margin: 0 auto;
+    }
+    #sidebarCollapse.active span:first-of-type {
+        transform: rotate(45deg) translate(2px, 2px);
+    }
+    #sidebarCollapse.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+    #sidebarCollapse.active span:last-of-type {
+        transform: rotate(-45deg) translate(1px, -1px);
+    }
+
+}
+
+/* for logo */
+
+.logo {
+  border-radius: 50%;
+  height: 95px;
+}
+
+/* to center logo */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* to center logo text */
+
+.h5 {
+  text-align: center;
+}
+/* For revolutions */
+
+#thumbnail {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.fullCard {
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  margin: 10px 5px;
+  padding: 4px;
+  background-color: #2d3035;
+}
+
+.fullCard a {
+  color: #e25822;
+}
+
+.cardContent {
+  padding: 10px;
+}
+.cardText {
+  margin-bottom: 0px;
+}
+
+.textcard {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px 5px;
+  padding: 4px;
+  background-color: #2d3035;
+}
+
+/* for contact form */
+
+.contact-container {
+  margin-bottom: 0px;
+  max-width: 600px;
+  background: #ffffff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 20px #000000b3;
+  font-family: sans-serif;
+  padding: 30px 40px;
+  margin: auto;
+  width: 85%;
+}
+
+.contact-container h1 {
+  margin: 0;
+  font-weight: 200;
+}
+
+.title {
+  font-family: "Kurale", sans-serif;
+  text-transform: uppercase;
+  color: #363333bf;
+  font-weight: 600;
+}
+
+/* for headers */
+
+.electric {
+    border-color: rgba(255,255,255,1);
+    color: rgba(255,255,255,1);
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 10px;
+    display: block;
+    text-align: center;
+    font-size: 300%;
+}
+
+/* for top picture */
+
+.topbit {
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/people.png);
+    backface-visibility: inherit;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 20px;
+}
+
+/* to respond to screen size */
+
+@media(min-width: 991px) {
+  .electric {
+    padding-bottom: 40px;
+    padding-top: 40px;
+    position: relative;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 500%;
+    border-width: 5px;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 60%;
+  }
+}
+
+.linknav {
+  float: right;
+  padding: 10px;
+  color: rgba(255,255,255,1);
+}
+
+.txtb {
+  border: 1px solid gray;
+  margin: 8px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+
+.txtb label {
+  display: block;
+  text-align: left;
+  color: #333;
+  font-family: "Heebo", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.txtb input,.txtb textarea {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 14px;
+  margin-top: 6px;
+  font-family: "Sofia", sans-serif;
+}
+
+.btn2 {
+  display: inline-block;
+  background: #28b491;
+  padding: 14px 0;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 100%;
+}
+
+/* for index page animation*/
+
+.introduction {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  background: #e27c0880;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  color: white;
+  align-items: center;
+}
+
+.introduction-text {
+  color: rgb(233, 233, 233);
+  font-family: "Heebo", sans-serif;
+  font-size: 3rem;
+  text-shadow: 4px 4px 4px #aaa;
+  position: absolute;
+  top: 10%;
+  text-align: center;
+}
+
+.introElec {
+  border-radius: 10pt;
+  border: 5px solid #bacdec;
+  padding: 8pt;
+}
+
+.hidder {
+  background: black;
+  overflow: hidden;
+}
+
+.hidder span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+/* for meeting arrow / probably obsolete */
+
+.inf {
+  border: rgb(0, 0, 0);
+  border-radius: 50%;
+  color: #64e064;
+  animation: ease-in-out;
+}
+
+.arr {
+  animation: arr 1s infinite linear;
+}
+
+@keyframes arr {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+/* for svg */
+
+.svgcss {
+  float: left;
+  margin-right: 20px;
+  display: inline-flex;
+  width: 300px;
+  height: 300px;
+}
+
+.svg2css {
+  float: left;
+  margin-right: 20px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.homepageGuys {
+    min-height: 32vh;
+    background-color: #8b8b8b;
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 5px;
+    padding: 4px;
+    text-align: left;
+}
+
+/* added when svg was changed to image */ 
+
+.homepageGuys img {
+  width: 300px;
+  float: left;
+}
+
+/* video player */
+
+.therow{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.thecol {
+  flex-basis: 50%;
+  min-width: 250px;
+}
+
+.feature-img {
+  width: 83%;
+  margin: auto;
+  position: relative;
+  border-radius: 6px;
+}
+
+.small-img-row {
+  display: flex;
+  background: #b97171;
+  margin: 20px 0;
+  align-items: center;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.small-img {
+  position: relative;
+}
+
+.small-img img{
+  width: 150px;
+}
+
+.small-img-row p {
+  margin-left: 20px;
+  color: #707070;
+  line-height: 22px;
+  font-size: 12px;
+  text-align: left;
+}
+
+.fa-play {
+  color: #006400;
+  font-size: 35px;
+}
+
+.play-btn {
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+}
+
+.video-player {
+  width: 100%;
+  display: none;
+}
+
+video:focus {
+  outline: none;
+}
+
+.close-btn {
+  position: relative;
+  cursor: pointer;
+  display: none;
+  color: #fff;
+  background-color: rgba(228, 143, 15, 0.753);
+  text-decoration: none;
+  border-radius: 50px;
+  text-align: center;
+  outline: none;
+  line-height: 1px;
+  height: 50px;
+  transition: all 0.5s;
+	width: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.close-btn span {
+	z-index: 2;	
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+}
+
+.close-btn::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+  transition: all 0.5s;
+  border-radius: 50px;
+	border: 1px solid rgba(255,255,255,0.2);
+	background-color: rgba(255,255,255,0.1);
+}
+.close-btn::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+  transition: all 0.5s;
+  border-radius: 50px;
+	border: 1px solid rgba(255,255,255,0.2);
+	background-color: rgba(255,255,255,0.1);
+}
+.close-btn:hover::before {
+  transform: rotate(-45deg);
+  border: 1px solid rgb(255, 7, 7);
+  background-color: rgba(255, 25, 25, 0.425);
+}
+.close-btn:hover::after {
+  transform: rotate(45deg);
+  border: 1px solid rgb(255, 7, 7);
+  background-color: rgba(255, 25, 25, 0.425);
+}
+
+.framewrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0px;
+  outline: none;
+  display: none;
+}
+
+.framewrap iframe {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.headed {
+  display: none;
+  text-align: center;
+  color: wheat;
+  font-size: 14px;
+}
+
+.revNav {
+  color: #333;
+  text-align: center;
+  font-size: 18px;
+}
+
+.fa-arrow-right {
+  animation-name: mover;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mover {
+  from {
+        transform : scale(1);
+        opacity   : 1;
+        color: teal;
+    }
+    50% {
+        transform : scale(0.75);
+        opacity   : 0.25;
+    }
+    to {
+        transform : scale(1.5);
+        opacity   : 1;
+        color: #cff3cf;
+    }
+}
+
+/* for black background for texts */
+
+.homepage {
+    min-height: 32vh;
+    background-color: #2a2e34;
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 5px;
+    padding: 4px;
+    text-align: left;
+}
+
+.homepage p{
+  color: #f8f9fa;
+  font-weight: lighter;
+  font-size: 12pt;
+}
+
+/* for about page */
+
+.about p{
+  color: #f8f9fa;
+  font-weight: lighter;
+  font-size: 12pt;
+  padding-top: 15pt;
+  padding-right: 15pt;
+  padding-left: 15pt;
+}
+
+.about ul{
+  color: #f8f9fa;
+  list-style: square;
+  margin: 40px;
+}
+
+.about img {
+  width: 65%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%)
+}
+
+/* for meeting treasury */
+
+.meet {
+  padding: 0px 20px 5px 20px;
+}
+
+.meet img {
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%)
+}
+
+.revNav2 {
+  color: white;
+  font-size: 200%;
+}
+
+.video {
+  text-align: center;
+  padding: 0px;
+}
+
+/* for guote on homepage/ this is hidden */
+
+.quote {
+  float: right;
+  padding: 32pt;
+  transition: ease-in-out 1s;
+  animation: QFade infinite;
+}
+
+.quote span {
+  display: block;
+}
+
+@keyframes QFade {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/* for guote and homepage items */
+
+.next {
+  display: table;
+  position: relative;
+  table-layout: fixed;
+  width: 100%;
+  text-align: left;
+}
+
+.next strong {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.next p {
+  color: #22252a;
+  font-size: 12pt;
+}
+
+.next a {
+  color: #006400;
+}
+.next2 {
+  background-color: #2d3035;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.next2 strong {
+  color: #ccc;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.next2 p{
+  color: #f8f9fa;
+  font-weight: lighter;
+  font-size: 12pt;
+}
+
+.next2 a {
+  color: #9fdba7;
+  font-size: 25pt;
+  font-weight: bolder;
+}
+
+.next img {
+  width: 100%;
+}
+
+@media(min-width: 991px) {
+  .next img {
+    width: 30%;
+  }
+}
+
+/* for team card and modal */
+
+.teamContainer {
+    max-width: 1140px;
+    margin: auto;
+    position: relative;
+    min-height: 1px;
+}
+
+.team {
+    min-height: 25vh;
+    background-color: #22252a;
+    float: left;
+    width: 100%;
+    border: 5px solid #22252a;
+    border-radius: 50px;
+    margin: 10px 5px;
+    padding: 4px;
+}
+
+.team h1 {
+    font-size: 36px;
+    font-family: "Archivo Narrow", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    padding-bottom: 60px;
+    text-align: center;
+
+}
+
+.teamCard {
+    width: 25%;
+    float: left;
+    padding: 0px 15px;
+}
+
+.teamBox {
+    padding: 15px;
+    background-color: #2d3035;
+    border-radius: 5px;
+    transition: margin 1s ease, box-shadow 1s ease;;
+}
+
+.teamBox:hover {
+    margin-top: -15px;
+    box-shadow: 0px 0px 40px black;
+}
+
+.teamBox img{
+    height: 264px;
+    width: 220px;
+    display: block;
+    border-radius: 10%;
+    margin: 10px auto;
+    
+}
+
+.teamBox h4 {
+    font-size: 20px;
+    font-family: "Archivo Narrow", sans-serif;
+    margin: 20px 0px 10px;
+    color: #ea5e71;
+    text-align: center;
+    font-weight: 700;
+}
+
+.teamBox h5 {
+    font-size: 16px;
+    font-family: "Archivo Narrow", sans-serif;
+    font-weight: 600;
+    color: #b9b9b9;
+    margin: 0px 0px 15px;
+    text-align: center;
+}
+
+.teamBox p {
+    color: #b9b9b9;
+    font-size: 15px;
+    font-family: "Archivo Narrow", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+/* was 991 before Blackbox */
+@media(max-width: 1330px) {
+    .teamCard {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 550px) {
+    .teamCard {
+        width: 100%;
+    }
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 400px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@media(max-width: 850px) {
+    .modal-content {
+        width: 80%;
+    }
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button for team page */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #330722;
+  color: white;
+  display: inline;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-body img {
+  width: 65%;
+  display: inline;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color:#455845db;
+  color: white;
+  display: inline;
+}
+
+.modal-footer h3 {
+  font-size: 20px;
+}
+
+.teamBtn {
+  cursor: pointer;
+  display: inline;
+}
+
+/* might upgrade to adding social media accounts, just remove the display:none */
+.teamIcon {
+    text-align: center;
+    display: none;
+}
+
+/* for back to top / this is obsolete */
+
+#topBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 70px; /* Place the button at the bottom of the page */
+  right: 18px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(107, 116, 27); /* Set a background color */
+  color: rgb(236, 240, 198); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  border-radius: 50px; /* Rounded corners */
+}
+
+#topBtn:hover {
+  background-color: cadetblue; /* Add a dark-grey background on hover */
+}
+
+
+.fa-arrow-alt-circle-up {
+  animation: mover2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mover2 {
+  from {
+        transform : scale(0.85);
+        opacity   : 1;
+        margin-bottom: -2%;
+    }
+    to {
+        transform : scale(1.2);
+        opacity   : 1;
+        margin-bottom: 0%;
+    }
+}
+
+/* Popup for th i icon on meeting treasury */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 180px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/* for faq drop down */
+
+.faq {
+  padding: 10pt;
+}
+
+.faq img {
+  width: 65%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%)
+}
+
+.faq span {
+  color: #ffb649;
+}
+
+.faqbtn {
+  color: white;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+.faqdown {
+  position: relative;
+  display: inline-block;
+}
+
+.faqdown-content {
+  display: none;
+  padding-left: 30pt;
+  position: relative;
+  width: auto;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(235, 89, 89, 0.2);
+  z-index: 1;
+}
+
+.faqdown-content p {
+  font-size: 17px;
+}
+
+.show {
+  display: block;
+}
+
+.click img {
+  width: 40px;
+  transform: rotate(260deg) scaleX(-1);
+}

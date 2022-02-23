@@ -13,7 +13,7 @@
 }
 body {
     font-family: "Archivo Narrow", sans-serif;
-    background: #E4E4E4 url(../img/back.png) repeat;
+    background: #E4E4E4 url(./img/back.png) repeat;
 }
 
 p {
@@ -328,7 +328,7 @@ a.article, a.article:hover {
 
 .topbit {
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/people.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/people.png);
     backface-visibility: inherit;
     height: auto;
     background-position: center;

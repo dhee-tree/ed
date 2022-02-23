@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+
+
 body{
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -6,12 +8,15 @@ section{
   text-align:center;
 }
 .footer #button{
-	width:35px;
-	height:35px;
-	border: #727172 12px solid;
+	width:15%;
+	height:200%;
+	border: #3d3131 12px solid;
 	border-radius:35px;
 	margin:0 auto;
-	position:relative;
+  position:relative;
+  text-align: center;
+  font-size: 45px;
+  color: aliceblue;
 	-webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
@@ -21,7 +26,7 @@ section{
 .footer #button:hover{
 	width:35px;
 	height:35px;
-	border: #3A3A3A 12px solid;
+	border: #3d3131 12px solid;
 	-webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
@@ -34,7 +39,7 @@ section{
 	left:0;
 	position:fixed;
     width: 100%;
-    height: 2em;
+    height: 3.5em;
     overflow:hidden;
     margin:0 auto;
 	-webkit-transition: all 1s ease;
@@ -75,7 +80,7 @@ section{
   position:relative;
   top:0;
   left:0;
-	background: #3A3A3A;
+	background: #3d3131;
   padding: 30px;
 }
 
@@ -149,14 +154,12 @@ a.faq-link {
 }
 
 #close {
-    float:right;
     display:inline-block;
     padding:2px 5px;
     background:#ccc;
 }
 
 #close:hover {
-    float:right;
     display:inline-block;
     padding:2px 5px;
     background:#ccc;

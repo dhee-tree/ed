@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+# About ED
+Electric Discussions (ED) is an innovative, ever expanding, open-minded community that seeks to draw in individuals from different backgrounds to share their life experiences. We discuss what matters. We discuss topics that range all the way from why saving money is a challenge, to why spirituality is an essential facet of life.
 
-You can use the [editor on GitHub](https://github.com/dhee-tree/ed/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Drawing wisdom from different individuals is the fastest way to learn about life. Being able to foster a community where people can openly express their diversity of thoughts is what we aspire to do. Every event, big or small offers a lesson to learn. Most times, the lessons that are proffered by these events lie dormant in people’s heads and are never shared. Our community aims to tackle this problem by providing a platform for individuals to share the lessons learned, and to share any information that will potentially change the life of listeners.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Members can join forces, or individually plan and deliver on a topic of their choosing. You will have a dedicated meeting, that you will run from beginning to end, allowing you to develop your:
 
-### Markdown
+- Interpersonal
+- Communication
+- Leadership and
+- Skills, thus putting you in a better position to affect change within your community.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# Aim
+Our aim is to change multiple lives, by expelling the confusion that surrounds everyday issues of self and service. The are no monetary obligations, so attend our next meeting and become part of the family.
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dhee-tree/ed/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+# Our Community
+- Lionel Muskwe
+- Ighomena Daniel Odebala
+- Ganiyu Gift Odebala
+- Francis Phiri
+- Vanette Mendozza
+- Walter Chakanetsa
+- Felicious Callussy
